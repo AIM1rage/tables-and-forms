@@ -9,7 +9,55 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <fieldset>
+            <label for="petType">Choose your pet type:</label>
+            <select name="petType" id="petType">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="tiger" selected>Tiger</option>
+            </select><br><br>
+
+            <label>
+                <input type="radio" name="gender" value="boy"> Male
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="girl"> Female
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="none" checked> Helicopter
+            </label><br><br>
+
+            <label for="eyeColor">
+                <input type="color" id="eyeColor" name="eyeColor"> Eye Color
+            </label><br><br>
+            <label for="tailLength">
+                Tail Length: <input type="number" id="tailLength" name="tailLength" min="7" max="120" value="42">
+            </label><br><br>
+
+            <label for="name">
+                <input type="text" id="name" name="name" placeholder="Name" value="Carlson">
+            </label><br><br>
+
+            <label for="dateOfBirth">
+                Date of Birth: <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </label><br><br>
+
+            <label for="email">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </label><br><br>
+
+            <label for="phone">
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            </label><br><br>
+
+            <label for="rules">
+                <input type="checkbox" id="rules" name="rules" value="true" required> I agree to the rules
+            </label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
 
 </main>
 </body>
